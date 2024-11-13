@@ -1,0 +1,33 @@
+/* Centraliza e limita a largura do dashboard */
+*{
+    background: #1E1E2F;
+    color:#E0E0E0;
+}
+#dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color:#A1A1B5 ;
+  }
+  
+  /* Define a grid para os gráficos */
+  .chart-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Limita o tamanho de cada gráfico */
+  canvas {
+    max-width: 500px;
+    max-height: 300px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
