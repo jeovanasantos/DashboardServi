@@ -1,9 +1,9 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { CSVProvider } from './CSVContext';
-import UploadPage from './UploadPage';
-import Dashboard from './dashboard';
+import { CSVProvider } from './context/CSVContext';
+import UploadPage from './pages/UploadPage';
+import DashboardPage from './pages/DashboardPage';
 
 
 const App = () => (
@@ -11,7 +11,7 @@ const App = () => (
     <Router>
       <Routes>
         <Route path="/" element={<UploadPage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
     </Router>
   </CSVProvider>
